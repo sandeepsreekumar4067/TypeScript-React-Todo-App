@@ -3,10 +3,11 @@ import backgroudimage from '../assets/backgroundmountain3.jpg';
 import '../style/interface.css';
 import tickMark from '../assets/checkmark-512.png'
 import arrow from '../assets/arrow.png'
+import Tasklist from "./tasklist";
 
 const Interface: FC = () => {
     const [isChecked, setIsChecked] = useState<boolean>(false);
-    const [itemlist,additemlist] = useState<string>('')
+    const [itemlist,additemlist] = useState(["hello","hey","hi","heyman","how are you bro"])
     const [value,setValue] = useState<string>('')
     const [itemCount,setItemCount] = useState<number>(0)
     const handleValueChange = (event:ChangeEvent<HTMLInputElement>)=>{
@@ -34,7 +35,7 @@ const Interface: FC = () => {
                     </div>
                     <div className="task-container">
                         <div className="task-list">
-
+                            <Tasklist itemlist={itemlist} />
                         </div>
                         <div className="task-details">
                             <div className="item-left">

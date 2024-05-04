@@ -1,0 +1,9 @@
+.tasks{
+    width:570px ;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(34, 40, 49,0.3);
+}
