@@ -80,10 +80,38 @@ body {
 .custom-checkBox.checked{
     background: linear-gradient(-50deg, #912BBC, #00A9FF);
     opacity: 0.6;
+    outline: none;
 }
 .custom-checkBox img{
     height: 10px;
     width: 10px;
+}
+.input-box input[type="text"]{
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+.button{
+    height: 100%;
+    width: 15%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #5BBCFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+}
+.button:active{
+    scale: 0.9;
+}
+.button img{
+    height: 50%;
+    width: 50%;
 }
 .task-list{
     margin-top: 50px;
