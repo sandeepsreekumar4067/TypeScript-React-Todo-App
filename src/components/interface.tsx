@@ -8,6 +8,7 @@ const Interface: FC = () => {
     const [isChecked, setIsChecked] = useState<boolean>(false);
     const [itemlist,additemlist] = useState<string>('')
     const [value,setValue] = useState<string>('')
+    const [itemCount,setItemCount] = useState<number>(0)
     const handleValueChange = (event:ChangeEvent<HTMLInputElement>)=>{
         setValue(event.target.value)
     }
@@ -31,8 +32,26 @@ const Interface: FC = () => {
                             <img src={arrow} />
                         </div>
                     </div>
-                    <div className="task-list">
+                    <div className="task-container">
+                        <div className="task-list">
 
+                        </div>
+                        <div className="task-details">
+                            <div className="item-left">
+                                {itemCount} items left
+                            </div>
+                            <div className="sort-list">
+                                <div className="all">all</div>
+                                <div className="active">active</div>
+                                <div className="complete">complete</div>
+                            </div>
+                            <div className="endTask">
+                                <div className="clear">Clear Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="message">
+                        Drag and drop to reorder list
                     </div>
                 </div>
             </div>
