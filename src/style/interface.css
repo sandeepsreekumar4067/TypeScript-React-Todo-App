@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.interface {
+    height: 100%;
+    width: 100%;
+}
+
+.mountain-background {
+    width: 100%;
+    position: relative;
+}
+
+.mountain-background img {
+    width: 100%;
+    height: 350px;
+}
+
+.gradient {
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background: linear-gradient(to right, #FF71CD, #00A9FF);
+}
+
+.overlay {
+    margin-top: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 590px; 
+    height: 600px;
+    background-color: red
+}
