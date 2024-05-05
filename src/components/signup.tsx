@@ -1,7 +1,7 @@
 import { FC } from "react";
 import '../style/login.css'
 import loginImage from '../assets/login-container.jpg'
-const Loginpage:FC = () => {
+const SignUp:FC = () => {
     return ( 
         <div>
             <div className="login-interface">
@@ -13,9 +13,9 @@ const Loginpage:FC = () => {
                 <div className="image-container">
                     <img src={loginImage} alt="" />
                     <div className="gradient">
-                    <div className="title">LOGIN</div>
+                    <div className="title">Sign Up</div>
                     <div className="subtitle">
-                        Welcome Back
+                        Gets Started
                     </div>
                     </div>
                 </div>
@@ -24,4 +24,4 @@ const Loginpage:FC = () => {
      );
 }
  
-export default Loginpage;
+export default SignUp;
