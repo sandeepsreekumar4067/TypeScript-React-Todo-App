@@ -127,20 +127,23 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.task-list{
-    background-color: white ;
-    height: 90%;
+.task-list {
+    overflow-x: hidden;
+    background-color: white;
+    height: 400px; /* Fixed height for the task list */
     width: 100%;
     display: flex;
     flex-direction: column;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom: 1px solid rgb(34, 40, 49,0.3);
+    border-bottom: 1px solid rgb(34, 40, 49, 0.3);
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 .task-details{
     height: 10%;
     width: 100%;
     display: flex;
+    overflow-y: auto;
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -178,4 +181,13 @@ body {
     cursor: pointer;
     opacity: 1;
     color: black;
+}
+.task-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.task-list {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
